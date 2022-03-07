@@ -41,15 +41,11 @@ void elevio_init(void){
     send(sockfd, (char[4]){0}, 4, 0);
 }
 
-
-
-
 void elevio_motorDirection(MotorDirection dirn){
     pthread_mutex_lock(&sockmtx);
     send(sockfd, (char[4]){1, dirn}, 4, 0);
     pthread_mutex_unlock(&sockmtx);
 }
-
 
 void elevio_buttonLamp(int floor, ButtonType button, int value){
     assert(floor >= 0);
@@ -62,7 +58,6 @@ void elevio_buttonLamp(int floor, ButtonType button, int value){
     pthread_mutex_unlock(&sockmtx);
 }
 
-
 void elevio_floorIndicator(int floor){
     assert(floor >= 0);
     assert(floor < N_FLOORS);
@@ -72,22 +67,17 @@ void elevio_floorIndicator(int floor){
     pthread_mutex_unlock(&sockmtx);
 }
 
-
 void elevio_doorOpenLamp(int value){
     pthread_mutex_lock(&sockmtx);
     send(sockfd, (char[4]){4, value}, 4, 0);
     pthread_mutex_unlock(&sockmtx);
 }
 
-
 void elevio_stopLamp(int value){
     pthread_mutex_lock(&sockmtx);
     send(sockfd, (char[4]){5, value}, 4, 0);
     pthread_mutex_unlock(&sockmtx);
 }
-
-
-
 
 int elevio_callButton(int floor, ButtonType button){
     pthread_mutex_lock(&sockmtx);
