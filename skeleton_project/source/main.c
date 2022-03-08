@@ -21,7 +21,7 @@ int main(){
 
     printf("last floor is: %d", elevator.lastFloor);
 
-    while(1) {
+//    while(1) {
 
 //        update_order_list(elevator); // Update orders in the elevator object
 //        lights_update_from_orderlist(elevator);

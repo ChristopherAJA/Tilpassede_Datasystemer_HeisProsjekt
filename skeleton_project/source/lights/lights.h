@@ -7,4 +7,4 @@
  *
  * @param elevator elevator object which includes attribute orderlist
  */
-void lights_update_from_orderlist(struct Elevator elevator);
+void lights_update_from_orderlist(Elevator *elevator);

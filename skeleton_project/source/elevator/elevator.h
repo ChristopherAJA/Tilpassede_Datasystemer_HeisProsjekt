@@ -2,15 +2,8 @@
  * @brief
  */
 
-//#include "../driver/elevio.h"
-#include "stdbool.h"
-#ifndef TILPASSEDE_DATASYSTEMER_HEISPROSJEKT_ELEVATOR_H
-#define TILPASSEDE_DATASYSTEMER_HEISPROSJEKT_ELEVATOR_H
 
-#endif //TILPASSEDE_DATASYSTEMER_HEISPROSJEKT_ELEVATOR_H
-
-
-struct Elevator{
+ struct Elevator{
  enum State{
      movingUp,
      movingDown,

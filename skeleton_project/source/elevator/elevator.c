@@ -31,7 +31,7 @@ struct Elevator initialize(){
 }
 
 /**
- *
+ * @brief
  * @param currentFloor
  * @param elevator
  * @return
@@ -54,7 +54,7 @@ bool check_orders_over(int currentFloor,struct Elevator elevator) {
     return orderOverCurrentFloor;
     }
 /**
- *
+ * @brief
  * @param currentFloor
  * @param elevator
  * @return
@@ -78,7 +78,7 @@ bool check_orders_under(int currentFloor,struct Elevator elevator){
 }
 
 /**
- *
+ * @brief
  * @param elevator
  */
 void check_if_stop_at_floor(struct Elevator *elevator) {
