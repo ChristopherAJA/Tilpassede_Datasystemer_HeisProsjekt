@@ -11,3 +11,7 @@ void lights_update_from_orderlist(struct Elevator elevator) {
         }
     }
 }
+
+void set_light_valid_floor_level (Elevator *elevator) {
+    elevio_floorIndicator(elevator->lastFloor);
+}
